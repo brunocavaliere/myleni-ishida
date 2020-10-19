@@ -3,6 +3,8 @@ import React from 'react';
 import { ReactComponent as InstagramIcon } from '../../assets/icon_instagram-footer.svg';
 import { ReactComponent as FacebookIcon } from '../../assets/icon_facebook-footer.svg';
 import { ReactComponent as LinkedinIcon } from '../../assets/icon_linkedin-footer.svg';
+import { ReactComponent as MailIcon } from '../../assets/icon_mail.svg';
+import { ReactComponent as WhatsAppIcon } from '../../assets/icon_whatsapp.svg';
 import logoFooter from '../../assets/logo_footer.svg';
 
 import { Container, Wrapper, Content, Copyright, Social } from './styles';
@@ -39,10 +41,12 @@ const Footer: React.FC = () => {
             <h6>Contato</h6>
 
             <ul className="listFooter">
-              <li>
+              <li className="contactFooter">
+                <WhatsAppIcon />
                 <a href="teste">hi@myleniishida.com.br</a>
               </li>
-              <li>
+              <li className="contactFooter">
+                <MailIcon />
                 <a href="teste">(19) 98719 - 5333</a>
               </li>
             </ul>

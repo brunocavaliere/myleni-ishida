@@ -30,6 +30,23 @@ export const Content = styled.div`
     color: var(--neutralPrimaryLightest);
   }
 
+  & .listFooter .contactFooter {
+    display: flex;
+    align-items: center;
+
+    & svg {
+      padding-right: 0.5rem;
+    }
+
+    & svg path {
+      color: #fff;
+    }
+
+    &:first-child svg path {
+      fill: #fff;
+    }
+  }
+
   & div .listFooter li {
     margin-bottom: 1.5rem;
 
